@@ -45,6 +45,14 @@ export class AppComponent implements OnInit {
       title: 'Checkbox',
       url: 'checkbox',
       icon: 'checkbox'
+    }, {
+      title: 'Chip',
+      url: 'chip',
+      icon: 'hardware-chip'
+    }, {
+      title: 'Content',
+      url: 'content',
+      icon: 'apps'
     }
 
   ];
