@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Puros</h3>
+  <!-- Default Checkbox -->
+  <ion-checkbox></ion-checkbox>
+
+  <!-- Disabled Checkbox -->
+  <ion-checkbox disabled="true"></ion-checkbox>
+
+  <!-- Checked Checkbox -->
+  <ion-checkbox checked="true"></ion-checkbox>
+
+  <!-- Checkbox Colors -->
+  <ion-checkbox color="primary"></ion-checkbox>
+  <ion-checkbox color="secondary"></ion-checkbox>
+  <ion-checkbox color="danger"></ion-checkbox>
+  <ion-checkbox color="light"></ion-checkbox>
+  <ion-checkbox color="dark"></ion-checkbox>
+
+  <h3>Lista</h3>
+  <!-- Checkboxes in a List -->
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <h3>Items</h3>
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Primary</ion-label>
+    <ion-checkbox color="primary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Secondary</ion-label>
+    <ion-checkbox color="secondary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Danger</ion-label>
+    <ion-checkbox color="danger"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Light</ion-label>
+    <ion-checkbox color="light"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dark</ion-label>
+    <ion-checkbox color="dark"></ion-checkbox>
+  </ion-item>
+</ion-content>
