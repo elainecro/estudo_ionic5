@@ -53,6 +53,10 @@ export class AppComponent implements OnInit {
       title: 'Content',
       url: 'content',
       icon: 'apps'
+    }, {
+      title: 'DateTime',
+      url: 'datetime',
+      icon: 'calendar'
     }
 
   ];
