@@ -57,6 +57,10 @@ export class AppComponent implements OnInit {
       title: 'DateTime',
       url: 'datetime',
       icon: 'calendar'
+    }, {
+      title: 'Fab',
+      url: 'fab',
+      icon: 'radio-button-on'
     }
 
   ];
