@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Input Default -->
+  <ion-input></ion-input>
+  
+  <!-- Input com valor -->
+  <ion-input value="1234"></ion-input>
+
+  <!-- Input com placeholder -->
+  <ion-input type="text" placeholder="Informe seu nome"></ion-input> 
+
+  <!-- Input com ícone de limpar -->
+  <ion-input clearInput value="Curso de Ionic5"></ion-input>
+
+  <!-- Input com valor numérico -->
+  <ion-input type="number" value="1234"></ion-input>
+
+  <!-- Input email -->
+  <ion-input type="email" placeholder="Informe seu email"></ion-input>
+
+  <!-- Input telefone -->
+  <ion-input type="tel" placeholder="Informe seu telefone"></ion-input>
+
+  <!-- Input url -->
+  <ion-input type="url" placeholder="Informe a url"></ion-input>
+
+  <!-- Input search -->
+  <ion-input type="search" placeholder="Campo Search"></ion-input>
+
+  <!-- Input password -->
+  <ion-input type="password" placeholder="Informe sua senha"></ion-input>
+
+  <ion-item>
+    <ion-label>Sem position</ion-label>
+    <ion-input type="text" placeholder="Informe o primeiro nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Floating</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked</ion-label>
+    <ion-input type="text" placeholder="Esse dá pra usar placeholder"></ion-input>
+  </ion-item>
+
+  <ion-input type="text" color="danger" placeholder="Usando temas"></ion-input>
+</ion-content>

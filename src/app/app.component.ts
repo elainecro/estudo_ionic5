@@ -69,6 +69,10 @@ export class AppComponent implements OnInit {
       title: 'Infinite Scroll',
       url: 'infinitescroll',
       icon: 'infinite'
+    }, {
+      title: 'Input',
+      url: 'input',
+      icon: 'chatbox-ellipses'
     }
 
   ];
