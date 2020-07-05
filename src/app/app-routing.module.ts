@@ -118,6 +118,10 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./pages/radio/radio.module').then( m => m.RadioPageModule)
   }
 ];
 
