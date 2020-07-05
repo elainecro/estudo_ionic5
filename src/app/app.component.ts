@@ -82,6 +82,11 @@ export class AppComponent implements OnInit {
       url: 'progressbar',
       icon: 'reload-circle'
     }
+    , {
+      title: 'Refresher',
+      url: 'refresher',
+      icon: 'refresh'
+    }
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
