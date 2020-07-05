@@ -142,6 +142,11 @@ export class AppComponent implements OnInit {
       url: "modal",
       icon: "chatbubbles",
     },
+    {
+      title: "Popover",
+      url: "popover",
+      icon: "filter",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
