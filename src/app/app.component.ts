@@ -136,7 +136,12 @@ export class AppComponent implements OnInit {
       title: "Toast",
       url: "toast",
       icon: "alert-circle",
-    }
+    },
+    {
+      title: "Modal",
+      url: "modal",
+      icon: "chatbubbles",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
