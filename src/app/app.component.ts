@@ -81,11 +81,14 @@ export class AppComponent implements OnInit {
       title: 'Progress Bar',
       url: 'progressbar',
       icon: 'reload-circle'
-    }
-    , {
+    }, {
       title: 'Refresher',
       url: 'refresher',
       icon: 'refresh'
+    }, {
+      title: 'Reorder',
+      url: 'reorder',
+      icon: 'reorder-three'
     }
 
   ];
