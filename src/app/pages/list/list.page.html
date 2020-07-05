@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Lista de Frutas</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Abacate</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Banana</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Maçã</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mamão</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>Lista Formulário</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <h3>Lista com Avatar</h3>  
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://avatars2.githubusercontent.com/u/446137?s=60&v=4">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <h2>Elaine Cristina</h2>
+        <h3>Desenvolvedora Full Stack</h3>
+        <p>Fundadora da marca Planned People - http://plannedpeople.com.br</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>Lista com Sliding</h3>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Arraste para a esquerda</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Não Lido</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item>
+      <ion-label>Sem opção</ion-label>
+    </ion-item>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Arraste para a direita</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option color="success" (click)="unread(item)">Arquivar</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h3>Lista de um Array</h3>
+  <ion-list>
+    <ion-item *ngFor="let cor of cores">
+      <ion-label>{{cor}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

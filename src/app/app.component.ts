@@ -73,6 +73,10 @@ export class AppComponent implements OnInit {
       title: 'Input',
       url: 'input',
       icon: 'chatbox-ellipses'
+    }, {
+      title: 'List',
+      url: 'list',
+      icon: 'list-circle'
     }
 
   ];
