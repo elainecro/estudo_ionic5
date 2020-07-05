@@ -13,15 +13,20 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: "Componentes Visuais",
-      url: "componentes-visuais",
-      icon: "apps"
-    },
-    {
       title: "Animação",
       url: "animacao",
       icon: "videocam",
-    }
+    },
+    {
+      title: "Componentes Visuais",
+      url: "componentes-visuais",
+      icon: "apps",
+    },
+    {
+      title: "Componentes Nativos",
+      url: "componentes-nativos",
+      icon: "hardware-chip",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
