@@ -14,7 +14,7 @@ export class ComponentesNativosPage implements OnInit {
   }
 
   showPage(page) {
-    this.navCtrl.navigateForward('componentes-nativos/'+page);
+    this.navCtrl.navigateForward('componentes-nativos/' + page);
   }
 
 }
