@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Componentes Visuais</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)="showPage(menu.url)" *ngFor="let menu of menuCollection">
+    <ion-icon slot="start" [ios]="menu.icon + '-outline'" [md]="menu.icon + '-sharp'"></ion-icon>
+    {{menu.title}}
+  </ion-button>
+</ion-content>
