@@ -126,7 +126,12 @@ export class AppComponent implements OnInit {
       title: "Segment",
       url: "segment",
       icon: "disc",
-    }
+    },
+    {
+      title: "Slides",
+      url: "slides",
+      icon: "albums",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
