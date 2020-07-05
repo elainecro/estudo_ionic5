@@ -93,6 +93,10 @@ export class AppComponent implements OnInit {
       title: 'Select',
       url: 'select',
       icon: 'heart-half'
+    }, {
+      title: 'Toggle',
+      url: 'toogle',
+      icon: 'toggle'
     }
 
   ];
