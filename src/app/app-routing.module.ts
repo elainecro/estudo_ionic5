@@ -94,6 +94,10 @@ const routes: Routes = [
   {
     path: 'toogle',
     loadChildren: () => import('./pages/toogle/toogle.module').then( m => m.TooglePageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
   }
 ];
 

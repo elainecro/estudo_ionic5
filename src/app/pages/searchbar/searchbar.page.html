@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Search Bar</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar color="secondary">
+    <ion-searchbar color="light" [(ngModel)]="nome" (keyup)="filtrarItens($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-searchbar color="success"></ion-searchbar> -->
+  Filtrando por: {{nome}}
+  <ion-list>
+    <ion-item *ngFor="let pessoa of pessoasFiltradas">
+      {{pessoa.nome}}
+    </ion-item>
+  </ion-list>
+
+  <!-- Searchbar with danger color -->
+  <h5>Tema</h5>
+  <ion-searchbar color="danger"></ion-searchbar>
+
+  <!-- Searchbar with value -->
+  <h5>Valor default</h5>
+  <ion-searchbar value="Ionic"></ion-searchbar>
+
+  <!-- Searchbar with telephone type -->
+  <h5>Telefone</h5>
+  <ion-searchbar type="tel"></ion-searchbar>
+  <!-- Searchbar with numeric inputmode -->
+  <h5>Numérico</h5>
+  <ion-searchbar inputmode="numeric"></ion-searchbar>
+
+  <!-- Searchbar disabled -->
+  <h5>Desabilitado</h5>
+  <ion-searchbar disabled="true"></ion-searchbar>
+
+  <!-- Searchbar with a cancel button and custom cancel button text -->
+  <h5>Botão cancelar customizado</h5>
+  <ion-searchbar showCancelButton cancelButtonText="Custom Cancel"></ion-searchbar>
+
+  <!-- Searchbar with a custom debounce -->
+  <h5>Debounce</h5>
+  <ion-searchbar debounce="500"></ion-searchbar>
+
+  <!-- Animated Searchbar -->
+  <h5>Animado</h5>
+  <ion-searchbar animated value="Buscar"></ion-searchbar>
+
+  <!-- Searchbar with a placeholder -->
+  <h5>Placeholder</h5>
+  <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+
+</ion-content>
