@@ -77,6 +77,10 @@ export class AppComponent implements OnInit {
       title: 'List',
       url: 'list',
       icon: 'list-circle'
+    }, {
+      title: 'Progress Bar',
+      url: 'progressbar',
+      icon: 'reload-circle'
     }
 
   ];
