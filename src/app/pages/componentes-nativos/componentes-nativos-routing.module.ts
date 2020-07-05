@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'text-to-speech',
     loadChildren: () => import('./text-to-speech/text-to-speech.module').then( m => m.TextToSpeechPageModule)
+  },
+  {
+    path: 'zoom',
+    loadChildren: () => import('./zoom/zoom.module').then( m => m.ZoomPageModule)
   }
 ];
 
