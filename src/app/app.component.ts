@@ -122,6 +122,11 @@ export class AppComponent implements OnInit {
       url: "searchbar",
       icon: "search-circle",
     },
+    {
+      title: "Segment",
+      url: "segment",
+      icon: "disc",
+    }
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
