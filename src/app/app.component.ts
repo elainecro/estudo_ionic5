@@ -27,6 +27,11 @@ export class AppComponent implements OnInit {
       url: "componentes-nativos",
       icon: "hardware-chip",
     },
+    {
+      title: "API Externa",
+      url: "api",
+      icon: "contract",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 

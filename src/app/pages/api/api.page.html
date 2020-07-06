@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>APIs Externas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Informe o CEP:</ion-label>
+    <ion-input type="text" [(ngModel)]="cep"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="block" (click)="consultarCEP()">Consultar</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>{{endereco.cep}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{endereco.logradouro}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{endereco.bairro}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{endereco.localidade}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{endereco.uf}}</ion-label>
+  </ion-item>
+
+  <ion-button expand="full" (click)="get()">GET</ion-button>
+  <ion-button expand="full" (click)="post()">POST</ion-button>
+  <ion-button expand="full" (click)="put()">PUT</ion-button>
+  <ion-button expand="full" (click)="delete()">DELETE</ion-button>
+  
+  {{result}}
+</ion-content>
